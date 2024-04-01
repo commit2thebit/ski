@@ -1,0 +1,71 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.quiz-title {
+    font-family: 'Arvo', serif;
+    font-weight: 700;
+    color: #D10000;
+    margin-bottom: 20px;
+}
+
+.ski-map {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.question-container, .result-container {
+    display: none;
+}
+
+.question {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.answer-option, .btn-start, .btn-next {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #D10000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Arvo', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.answer-option:hover, .btn-start:hover, .btn-next:hover {
+    background-color: #B00000;
+    transform: translateY(-2px);
+}
+
+.answer-option:disabled {
+    background-color: #f3f3f3;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.result-container {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
